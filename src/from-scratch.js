@@ -1,25 +1,38 @@
 const coolGreeting = () => {
 };
 
-const haveBirthday = () => {
+const haveBirthday = (person) => {
+  person.age += 1
+  console.log(person)
 };
 
 const becomeSecretAgent = () => {
 };
 
-const carMaker = () => {
+const carMaker = (name, marker, year) => {
+  return {
+    name: name,
+    maker: marker,
+    year: year,
+    needsOilChange: false,
+  }
 };
 
 const weAreNotFriends = () => {
 };
 
-const listHobbies = () => {
+const listHobbies = (person) => {
+  const list = person.hobbies
+  for (let activity in list) {
+    console.log(`${person.name} likes ${person.hobbies[activity]}.`)
+  }
 };
 
 const getNextOpponent = () => {
 };
 
-const listAllKeys = () => {
+const listAllKeys = (obj) => {
+  return Object.keys(obj)
 };
 
 const listAllValues = () => {
